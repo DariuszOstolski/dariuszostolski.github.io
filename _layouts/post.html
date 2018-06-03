@@ -4,9 +4,9 @@ layout: default
 
 <div>
   <h2 class="content-title">{{ page.title }}</h2>
-  <span class="date-undertitle"><i class="icon-clock"></i>{{ page.date | date_to_string }}</span>
+  <span class="date-undertitle"><i class="far fa-clock"></i>{{ page.date | date_to_string }}</span>
   <div class="content-tags">
-    <i class="icon-tag"></i>
+    <i class="fas fa-tags"></i>
     {% for tag in page.tags %}
       <span class="content-tag">{{tag}}</span>
     {% endfor %}
