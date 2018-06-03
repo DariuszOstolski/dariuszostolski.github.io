@@ -27,7 +27,7 @@ usual. This time password dialog was not started by systemd.
 The reason for this is that when udev is updated sometimes disk-id (```/dev/disk/by-id/*```) generation scheme
 changes and if you have disk encryption enabled your encrypted disk-id is stored in /etc/cryptab and entry
 in this file is not updated. See screenshot taken from emergency shell:
-![Emergency shell]({{ "/images/emergency_shell.png" | absolute_url }}) <!-- .element style="border: 0; background: None; box-shadow: None" -->
+![Emergency shell]({{ "/images/emergency_shell.png" | absolute_url }}) 
 
 
 ## Fix

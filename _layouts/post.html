@@ -5,6 +5,11 @@ layout: default
 <div>
   <h2 class="content-title">{{ page.title }}</h2>
   <span class="date-undertitle">{{ page.date | date_to_string }}</span>
+  <div class="content-tags">
+    {% for tag in page.tags %}
+      <span class="content-tag">{{tag}}</span>
+    {% endfor %}
+  </div>
   {{ content }}
 </div>
 
