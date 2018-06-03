@@ -1,0 +1,64 @@
+---
+---
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #268bd2;
+}
+
+.share-page{
+  font-size:15px;
+}
+
+.share-page:after{
+	content: "";
+	display: table;
+	clear: both;
+} 
+
+.share-page a{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 5px 10px 0;
+  padding: 2px 4px;
+  display: block;
+  float: left;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 5px 30px;
+    margin: 5px 10px 5px 20px;
+    border: none;
+    float: right;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input{
+  font-size: 20px;
+}
+
+textarea{
+  font-size: 20px;
+}
+
+.col {
+  max-width: 1000px;
+  margin: auto;
+}
+
+{% include css/header.css %}
+{% include css/sidebar.css %}
+{% include css/main.css %}
+{% include css/content.css %}
+{% include css/tough.css %}

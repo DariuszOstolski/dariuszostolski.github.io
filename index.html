@@ -1,1 +1,17 @@
-Hello World
+---
+layout: default
+title: home
+---
+
+{% for post in site.posts limit:site.article_num %}
+  <div>
+    <h2>
+      <a class = "content-title" href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <span class="date-undertitle">{{ post.date | date_to_string }}</span>
+    {{ post.content | strip_html | truncate:150 }}
+	<a class = "readmore" href={{site.baseurl}}{{post.url}}>Read More</a>
+  </div>
+{% endfor %}
