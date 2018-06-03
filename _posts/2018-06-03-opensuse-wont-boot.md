@@ -121,7 +121,7 @@ Here is a short instruction step by step howto fix unbootable system:
    ```
    
 
-Resources:
+## Resources:
 * [https://bugzilla.opensuse.org/show_bug.cgi?id=1063249](https://bugzilla.opensuse.org/show_bug.cgi?id=1063249)
 * [https://bugzilla.opensuse.org/show_bug.cgi?id=904987](https://bugzilla.opensuse.org/show_bug.cgi?id=904987)
 * [https://bugzilla.suse.com/show_bug.cgi?id=1095096](https://bugzilla.suse.com/show_bug.cgi?id=1095096)
