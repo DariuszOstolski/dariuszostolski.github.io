@@ -126,3 +126,4 @@ Here is a short instruction step by step howto fix unbootable system:
 * [https://bugzilla.opensuse.org/show_bug.cgi?id=1063249](https://bugzilla.opensuse.org/show_bug.cgi?id=1063249)
 * [https://bugzilla.opensuse.org/show_bug.cgi?id=904987](https://bugzilla.opensuse.org/show_bug.cgi?id=904987)
 * [https://bugzilla.suse.com/show_bug.cgi?id=1095096](https://bugzilla.suse.com/show_bug.cgi?id=1095096)
+* [https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.trouble.html#sec.trouble.data.recover.rescue.access](https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.trouble.html#sec.trouble.data.recover.rescue.access)
