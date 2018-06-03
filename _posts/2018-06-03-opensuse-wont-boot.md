@@ -25,14 +25,14 @@ usual. This time password dialog was not started by systemd.
 ## Reason
 
 The reason for this is that when udev is updated sometimes disk-id (```/dev/disk/by-id/*```) generation scheme
-changes and if you have disk encryption enabled your encrypted disk-id is stored in /etc/cryptab and corresponding entry
+changes and if you have disk encryption enabled your encrypted disk-id is stored in /etc/cryptab and entry
 in this file is not updated. 
 
 
 ## Fix
 
 Here is a short instruction step by step howto fix unbootable system:
-):
+
 1. Wait for emergency shell(~2-3 minutes in my case).
 
 2. Decrypt *all* encrypted drives/partitions (you quite possibly only have one) that are part of your system. The lsblk command may be helpful, or you may find these under paths like /dev/nvme*, or it may be easier to look at the symlinks under /dev/disk/by-id/ (be aware there are likely lots of duplicates, pointing to the same drive/partition, in this location). Run cryptsetup for each one:
@@ -100,8 +100,8 @@ Here is a short instruction step by step howto fix unbootable system:
    ```
    It will mount your boot partition which is required for this fix to work.
 
-7. Edit `/etc/crypttab` to fix the entry that is no longer created by udev because of this bug.
-  Replace:
+7. Edit `/etc/crypttab` to fix the entry that is no longer created by udev. In this case NVMe disk id naming convention changed from nvme-20 to nvme-eui.0.
+  So I had to replace:
   `/dev/disk/by-id/nvme-20xxxxxxx`
 
    With: `/dev/disk/by-id/nvme-eui.0xxxxx`
@@ -122,6 +122,6 @@ Here is a short instruction step by step howto fix unbootable system:
    
 
 Resources:
-* https://bugzilla.opensuse.org/show_bug.cgi?id=1063249
-* https://bugzilla.opensuse.org/show_bug.cgi?id=904987
-* https://bugzilla.suse.com/show_bug.cgi?id=1095096
+* [https://bugzilla.opensuse.org/show_bug.cgi?id=1063249](https://bugzilla.opensuse.org/show_bug.cgi?id=1063249)
+* [https://bugzilla.opensuse.org/show_bug.cgi?id=904987](https://bugzilla.opensuse.org/show_bug.cgi?id=904987)
+* [https://bugzilla.suse.com/show_bug.cgi?id=1095096](https://bugzilla.suse.com/show_bug.cgi?id=1095096)
