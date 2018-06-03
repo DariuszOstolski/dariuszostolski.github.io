@@ -5,7 +5,7 @@ highlighter: rouge
 permalink:        pretty
 
 # Setup
-title:            Random stuff on programming, Linux and life
+title:            Linux, programming and life
 tagline:          'I like KISS. By KISS I means "keep it simple and stupid". '
 baseurl:          /
 
