@@ -5,12 +5,12 @@ highlighter: rouge
 permalink:        pretty
 
 # Setup
-title:            Minimal Blog
+title:            Random stuff on programming, Linux and life
 tagline:          'I like KISS. By KISS I means "keep it simple and stupid". '
 baseurl:          /
 
 author:
-  name:           Long
+  name:           Ostolski
 
 paginate:         5
 recent-num:       5
