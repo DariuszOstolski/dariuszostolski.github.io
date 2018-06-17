@@ -7,7 +7,7 @@ permalink:        pretty
 # Setup
 title:            Linux, programming and life
 tagline:          'I like KISS. By KISS I means "keep it simple and stupid". '
-baseurl:          /
+baseurl:          
 
 author:
   name:           Ostolski

@@ -3,18 +3,18 @@ layout: default
 title: archive
 ---
 
-<h2 class="content-title">Archives</h2>
+<h2 class="content-title fadeIn animated">Archives</h2>
 <hr>
 
-<ul>
-{% for post in site.posts %}
-  {% assign currentdate = post.date | date: "%B %Y" %}
-  {% if currentdate != date %}
-	</ul>
-	<ul>
-		<h3 class="content-title">{{post.date | date_to_string}}</h3>
-		{% assign date = currentdate %} 
-  {% endif %}
+<ul class="fadeIn animated">
+    {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%B %Y" %}
+    {% if currentdate != date %}
+</ul>
+<ul class="fadeIn animated">
+    <h3 class="content-title">{{post.date | date_to_string}}</h3>
+    {% assign date = currentdate %}
+    {% endif %}
     <li><h4><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h4></li>
-{% endfor %}
+    {% endfor %}
 </ul>

@@ -53,7 +53,6 @@ textarea{
 }
 
 .col {
-  max-width: 1000px;
   margin: auto;
 }
 
@@ -62,3 +61,4 @@ textarea{
 {% include css/main.css %}
 {% include css/content.css %}
 {% include css/tough.css %}
+{% include css/animate.css %}
