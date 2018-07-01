@@ -57,6 +57,6 @@ Hello World!
 
 Having that starter project we should be able to write scripts using Typescript.
 
-Here is a starter project on GitHub: https://github.com/DariuszOstolski/typescript-starter  
+Here is a starter project on GitHub: [typescript-starter](https://github.com/DariuszOstolski/typescript-starter)  
 
 
